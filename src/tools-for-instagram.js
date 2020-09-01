@@ -60,6 +60,7 @@ function toolsForInstagram() {
     global.uploadPictureByUrl = require('./uploadPictureByUrl.js');
     global.getMediaType = require('./getMediaType.js');
     global.getPhotoUrl = require('./getPhotoUrl.js');
+    global.unFollowUserByIntervall = require('./unFollowUserByIntervall.js')
     //The same as alias
     global.getVideoUrl = require('./getPhotoUrl.js');
     global.getInbox = require('./getInbox.js');
