@@ -23,25 +23,25 @@ require('./src/tools-for-instagram.js');
 
     
     console.log("\n5 -- Trying to get recent hashtag list and like the first item -- \n".bold.underline);
-    let posts = await recentHashtagList(ig, "dogs");
+    let posts = await recentHashtagList(ig, "nikon");
     await likePost(ig, posts[0]);
 
     
     console.log("\n6 -- Trying to get top hashtag list and like the first item -- \n".bold.underline);
-    posts = await topHashtagList(ig, "dogs");
+    posts = await topHashtagList(ig, "nikon", true);
     await likePost(ig, posts[0]);
 
 
     
     console.log("\n7 -- Trying to get recent location list and like the first item -- \n".bold.underline);
     console.log("Getting the most accurated Location...\n[To get a randomized location of the search result specify 'true' at the end of function]\n- Example: recentLocationList(ig, 'Spain', true);".yellow);
-    posts = await recentLocationList(ig, "Spain");
+    posts = await recentLocationList(ig, "Berlin");
     await likePost(ig, posts[0]);
 
     
     console.log("\n8 -- Trying to get top location list and like the first item -- \n".bold.underline);
     console.log("Getting the most accurated Location...\n[To get a randomized location of the search result specify 'true' at the end of function]\n- Example: recentLocationList(ig, 'Spain', true);".yellow);
-    posts = await topLocationList(ig, "Spain");
+    posts = await topLocationList(ig, "Moscow");
     await likePost(ig, posts[0]);
 
     
